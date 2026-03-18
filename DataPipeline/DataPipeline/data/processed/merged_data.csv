@@ -1,0 +1,6 @@
+order_id,customer_id,product_id,quantity,order_date,customer_name,city,product_name,price
+1,101,1,2,2026-01-01,Ali,Lahore,Keyboard,50
+2,102,2,1,2026-01-02,Sara,Karachi,Mouse,25
+3,101,3,1,2026-01-03,Ali,Lahore,Monitor,200
+4,103,1,1,2026-01-04,Ahmed,Islamabad,Keyboard,50
+5,104,2,3,2026-01-05,Ayesha,Lahore,Mouse,25
