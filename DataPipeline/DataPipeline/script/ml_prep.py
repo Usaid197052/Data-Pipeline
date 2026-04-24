@@ -10,9 +10,6 @@ PROJECT_ROOT = os.path.dirname(BASE_DIR)
 
 data_path = os.path.join(PROJECT_ROOT, "data", "processed", "cleaned_data.csv")
 
-# ---------------------------
-# LOAD DATA
-# ---------------------------
 df = pd.read_csv(data_path)
 
 print("Data loaded.")
