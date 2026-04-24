@@ -1,6 +1,7 @@
 import pandas as pd
 
 print("Starting cleaning process...")
+
 df = pd.read_csv("data/processed/merged_data.csv")
 print("Data loaded.")
 df.columns = df.columns.str.strip()
