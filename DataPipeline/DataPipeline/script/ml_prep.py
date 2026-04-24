@@ -17,10 +17,6 @@ df['high_value_customer'] = df['total'] > 100
 
 X = df[['price', 'quantity']]
 y = df['high_value_customer']
-
-# ---------------------------
-# TRAIN TEST SPLIT
-# ---------------------------
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
