@@ -12,7 +12,6 @@ df = orders.merge(customers, on="customer_id", how="left")
 
 print("Orders + Customers merged.")
 
-# Merge with products
 df = df.merge(products, on="product_id", how="left")
 
 print("All datasets merged.")
