@@ -8,9 +8,6 @@ df.drop_duplicates(inplace=True)
 df.fillna("Unknown", inplace=True)
 df['total'] = df['price'] * df['quantity']
 
-# ---------------------------
-# STEP 5: Convert date column
-# ---------------------------
 df['order_date'] = pd.to_datetime(df['order_date'])
 
 # ---------------------------
