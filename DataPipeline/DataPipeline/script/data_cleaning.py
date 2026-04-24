@@ -5,10 +5,6 @@ df = pd.read_csv("data/processed/merged_data.csv")
 print("Data loaded.")
 df.columns = df.columns.str.strip()
 df.drop_duplicates(inplace=True)
-
-# ---------------------------
-# STEP 3: Handle missing values
-# ---------------------------
 df.fillna("Unknown", inplace=True)
 
 # ---------------------------
