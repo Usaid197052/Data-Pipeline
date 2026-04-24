@@ -15,6 +15,7 @@ df.fillna("Unknown", inplace=True)
 df['total'] = df['price'] * df['quantity']
 
 df['order_date'] = pd.to_datetime(df['order_date'])
+
 df['month'] = df['order_date'].dt.month
 
 print("Feature engineering complete.")
