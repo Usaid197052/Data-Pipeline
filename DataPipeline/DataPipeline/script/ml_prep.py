@@ -13,13 +13,8 @@ data_path = os.path.join(PROJECT_ROOT, "data", "processed", "cleaned_data.csv")
 df = pd.read_csv(data_path)
 
 print("Data loaded.")
-
-
 df['high_value_customer'] = df['total'] > 100
 
-# ---------------------------
-# SELECT FEATURES
-# ---------------------------
 X = df[['price', 'quantity']]
 y = df['high_value_customer']
 
