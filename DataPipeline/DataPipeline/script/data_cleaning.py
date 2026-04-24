@@ -6,9 +6,6 @@ df = pd.read_csv("data/processed/merged_data.csv")
 
 print("Data loaded.")
 
-# ---------------------------
-# STEP 1: Clean column names
-# ---------------------------
 df.columns = df.columns.str.strip()
 
 # ---------------------------
