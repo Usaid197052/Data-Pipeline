@@ -2,7 +2,6 @@ import pandas as pd
 
 print("Starting data merge...")
 
-# Load files
 customers = pd.read_csv("data/raw/customers.csv")
 orders = pd.read_csv("data/raw/orders.csv")
 products = pd.read_csv("data/raw/products.csv")
