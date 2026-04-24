@@ -2,8 +2,6 @@ import pandas as pd
 
 print("Starting cleaning process...")
 
-# Load merged data
-
 df = pd.read_csv("data/processed/merged_data.csv")
 
 print("Data loaded.")
