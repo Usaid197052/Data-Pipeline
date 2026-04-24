@@ -8,7 +8,6 @@ products = pd.read_csv("data/raw/products.csv")
 
 print("Files loaded successfully.")
 
-# Merge orders with customers
 df = orders.merge(customers, on="customer_id", how="left")
 
 print("Orders + Customers merged.")
