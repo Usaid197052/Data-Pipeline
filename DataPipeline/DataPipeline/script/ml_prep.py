@@ -14,10 +14,7 @@ df = pd.read_csv(data_path)
 
 print("Data loaded.")
 
-# ---------------------------
-# CREATE TARGET VARIABLE
-# ---------------------------
-# High value customer if total > 100
+
 df['high_value_customer'] = df['total'] > 100
 
 # ---------------------------
