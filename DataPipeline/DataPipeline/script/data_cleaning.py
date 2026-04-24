@@ -7,12 +7,7 @@ df.columns = df.columns.str.strip()
 df.drop_duplicates(inplace=True)
 df.fillna("Unknown", inplace=True)
 df['total'] = df['price'] * df['quantity']
-
 df['order_date'] = pd.to_datetime(df['order_date'])
-
-# ---------------------------
-# STEP 6: Extract month
-# ---------------------------
 df['month'] = df['order_date'].dt.month
 
 print("Feature engineering complete.")
