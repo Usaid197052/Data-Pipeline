@@ -6,10 +6,6 @@ print("Data loaded.")
 df.columns = df.columns.str.strip()
 df.drop_duplicates(inplace=True)
 df.fillna("Unknown", inplace=True)
-
-# ---------------------------
-# STEP 4: Create new feature (total revenue)
-# ---------------------------
 df['total'] = df['price'] * df['quantity']
 
 # ---------------------------
