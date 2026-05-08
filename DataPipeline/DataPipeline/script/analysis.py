@@ -13,7 +13,6 @@ os.makedirs(output_path, exist_ok=True)
 df = pd.read_csv(data_path)
 print("Data loaded.")
 
-
 rev_product = df.groupby("product_name")["total"].sum()
 
 
