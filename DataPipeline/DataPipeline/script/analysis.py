@@ -10,14 +10,21 @@ PROJECT_ROOT = os.path.dirname(BASE_DIR)
 data_path = os.path.join(PROJECT_ROOT, "data", "processed", "cleaned_data.csv")
 output_path = os.path.join(PROJECT_ROOT, "outputs", "reports")
 
+
 os.makedirs(output_path, exist_ok=True)
 
 
 df = pd.read_csv(data_path)
 
 print("Data loaded.")
+
+
 rev_product = df.groupby("product_name")["total"].sum()
+
+
 rev_customer = df.groupby("customer_name")["total"].sum()
+
+
 monthly = df.groupby("month")["total"].sum()
 
 

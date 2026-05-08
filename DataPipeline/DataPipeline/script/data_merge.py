@@ -15,7 +15,6 @@ print("Orders + Customers merged.")
 df = df.merge(products, on="product_id", how="left")
 
 print("All datasets merged.")
-
 df.to_csv("data/processed/merged_data.csv", index=False)
 
 print("Merged data saved successfully.")

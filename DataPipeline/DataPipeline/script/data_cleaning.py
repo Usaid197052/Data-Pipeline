@@ -20,7 +20,6 @@ df['month'] = df['order_date'].dt.month
 
 print("Feature engineering complete.")
 
-
 df.to_csv("data/processed/cleaned_data.csv", index=False)
 
 print("Cleaned data saved successfully.")
