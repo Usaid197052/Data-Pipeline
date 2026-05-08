@@ -12,7 +12,6 @@ output_path = os.path.join(PROJECT_ROOT, "outputs", "reports")
 os.makedirs(output_path, exist_ok=True)
 
 df = pd.read_csv(data_path)
-
 print("Data loaded.")
 
 
