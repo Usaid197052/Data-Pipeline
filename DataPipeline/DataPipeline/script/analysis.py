@@ -20,7 +20,6 @@ monthly = df.groupby("month")["total"].sum()
 print("\nRevenue per product:\n", rev_product)
 print("\nTop 3 customers:\n",
       rev_customer.sort_values(ascending=False).head(3))
-
 print("\nMonthly revenue:\n", monthly)
 
 print("\nTotal Revenue:", df['total'].sum())
