@@ -14,7 +14,6 @@ df = pd.read_csv(data_path)
 print("Data loaded.")
 
 rev_product = df.groupby("product_name")["total"].sum()
-
 rev_customer = df.groupby("customer_name")["total"].sum()
 
 
