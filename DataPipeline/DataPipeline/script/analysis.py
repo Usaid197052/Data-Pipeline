@@ -17,7 +17,6 @@ rev_product = df.groupby("product_name")["total"].sum()
 rev_customer = df.groupby("customer_name")["total"].sum()
 monthly = df.groupby("month")["total"].sum()
 
-
 print("\nRevenue per product:\n", rev_product)
 
 print("\nTop 3 customers:\n",
