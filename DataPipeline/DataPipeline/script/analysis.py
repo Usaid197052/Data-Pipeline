@@ -23,7 +23,6 @@ print("\nTop 3 customers:\n",
 print("\nMonthly revenue:\n", monthly)
 print("\nTotal Revenue:", df['total'].sum())
 
-
 rev_product.to_csv(os.path.join(output_path, "revenue_per_product.csv"))
 rev_customer.to_csv(os.path.join(output_path, "revenue_per_customer.csv"))
 monthly.to_csv(os.path.join(output_path, "monthly_revenue.csv"))
